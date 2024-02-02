@@ -4,6 +4,9 @@ public interface Pet {
 
     boolean eat(int amount);
 
-    // demo randomMethod
+    default void sayHi() {
+        System.out.println("Hi");
+    }
+
 }
 
