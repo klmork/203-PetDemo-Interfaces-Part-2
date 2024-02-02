@@ -8,14 +8,13 @@ public class Cat implements Pet {
     public void speak() {
         System.out.println("meow");
     }
-    public boolean eat(int amount) {
-        System.out.println("eating!!!");
-        amountFed += amount;
-        return amountFed > fullAt;
-    }
-    public void display() {
-        System.out.println(this.getClass() + ": " + id);
-    }
+
+
 
     public int getAmountFed() { return amountFed; }
+    public void setAmountFed(int amount) {
+        this.amountFed += amount;
+    }
+    public int getId() { return id; }
+
 }

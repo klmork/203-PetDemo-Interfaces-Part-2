@@ -9,18 +9,15 @@ public class Dog implements Pet {
     public void speak() {
         System.out.println("bark");
     }
-    public boolean eat(int amount) {
-        System.out.println("eating!!!");
-        amountFed += amount;
-        return amountFed > fullAt;
-    }
-    public void display() {
-        System.out.println(this.getClass() + ": " + id);
-    }
+
 
     public void sit() {
         System.out.println("sitting");
     }
 
     public int getAmountFed() { return amountFed; }
+    public int getId() { return id; }
+    public void setAmountFed(int amount) {
+        this.amountFed += amount;
+    }
 }

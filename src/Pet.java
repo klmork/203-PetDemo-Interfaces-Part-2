@@ -2,8 +2,6 @@
 public interface Pet {
     void speak();
 
-    boolean eat(int amount);
-
     default void sayHi() {
         System.out.println("Hi");
     }
@@ -12,7 +10,20 @@ public interface Pet {
         return getAmountFed() * 2;
     }
 
+    default int eat(int amount) {
+        System.out.println("eating!!!");
+        setAmountFed(amount);
+        return getAmountFed();
+    }
+    void setAmountFed(int amount);
+
     int getAmountFed();
+
+    default void display() {
+        System.out.println(this.getClass() + ": " + getId());
+    }
+    int getId();
+
 
 }
 
