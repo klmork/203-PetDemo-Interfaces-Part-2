@@ -2,7 +2,7 @@
 public interface Pet {
     void speak();
 
-    boolean eat(int amount);
+    int eat(int amount);
 
     // demo randomMethod
 }

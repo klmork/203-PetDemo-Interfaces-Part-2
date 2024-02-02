@@ -9,10 +9,10 @@ public class Dog implements Pet {
     public void speak() {
         System.out.println("bark");
     }
-    public boolean eat(int amount) {
+    public int eat(int amount) {
         System.out.println("eating!!!");
         amountFed += amount;
-        return amountFed > fullAt;
+        return amountFed;
     }
     public void display() {
         System.out.println(this.getClass() + ": " + id);
