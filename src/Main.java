@@ -17,6 +17,7 @@ public class Main {
         for (Pet pet : pets) {
             pet.speak(); // does compile
             pet.sayHi();
+            System.out.println(pet.doubleAmountFed());
             //pet.sit(); // does not compile
             // TODO: call sit on all dog objects
 

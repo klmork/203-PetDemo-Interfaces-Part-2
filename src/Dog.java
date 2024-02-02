@@ -21,4 +21,6 @@ public class Dog implements Pet {
     public void sit() {
         System.out.println("sitting");
     }
+
+    public int getAmountFed() { return amountFed; }
 }

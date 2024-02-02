@@ -16,4 +16,6 @@ public class Cat implements Pet {
     public void display() {
         System.out.println(this.getClass() + ": " + id);
     }
+
+    public int getAmountFed() { return amountFed; }
 }
